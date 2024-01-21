@@ -7,6 +7,8 @@ const score0El = document.querySelector("#score--0");
 const score1El = document.getElementById("score--1");
 const current0El = document.getElementById("current--0");
 const current1El = document.getElementById("current--1");
+let name1 = document.getElementById("name--0");
+let name2 = document.getElementById("name--1");
 
 const diceEl = document.querySelector(".dice");
 const btnNew = document.querySelector(".btn--new");
@@ -14,6 +16,9 @@ const btnRoll = document.querySelector(".btn--roll");
 const btnHold = document.querySelector(".btn--hold");
 
 let scores, currentScore, activePlayer, playing;
+
+name1.textContent = prompt("Enter player1 name:");
+name2.textContent = prompt("Enter player2 name:");
 
 // Starting conditions
 const init = function(){
