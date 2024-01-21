@@ -21,6 +21,12 @@ let scores, currentScore, activePlayer, playing;
 const init = function(){
     name1.textContent = prompt("Enter player1 name:");
     name2.textContent = prompt("Enter player2 name:");
+    while(!name1.textContent.length){
+        name1.textContent = prompt("Enter player1 name:");
+    }
+    while(!name2.textContent.length){
+        name2.textContent = prompt("Enter player2 name:")
+    }
     scores = [0, 0];
     currentScore = 0;
     activePlayer = 0;
