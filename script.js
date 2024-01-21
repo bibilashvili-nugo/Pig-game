@@ -17,11 +17,10 @@ const btnHold = document.querySelector(".btn--hold");
 
 let scores, currentScore, activePlayer, playing;
 
-name1.textContent = prompt("Enter player1 name:");
-name2.textContent = prompt("Enter player2 name:");
-
 // Starting conditions
 const init = function(){
+    name1.textContent = prompt("Enter player1 name:");
+    name2.textContent = prompt("Enter player2 name:");
     scores = [0, 0];
     currentScore = 0;
     activePlayer = 0;
